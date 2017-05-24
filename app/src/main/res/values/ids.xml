@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="position" type="id">0</item>
+    <item name="item_holder" type="id">1</item>
+    <item name="item_data" type="id">2</item>
+    <item name="item_sub_data" type="id">3</item>
+
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="horizontal_driver_style_with_margin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/h_divider</item>
+        <item name="android:background">@color/gray_e9e9e9</item>
+        <item name="android:layout_marginLeft">@dimen/padding_10</item>
+        <item name="android:layout_marginRight">@dimen/padding_10</item>
+        <item name="android:layout_marginTop">@dimen/padding_5</item>
+        <item name="android:layout_marginBottom">@dimen/padding_5</item>
+    </style>
+
+</resources>

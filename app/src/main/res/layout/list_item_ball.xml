@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/padding_5">
+
+    <TextView
+        android:id="@+id/tv_ball"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textColor="@color/text_color_red_and_white"
+        android:background="@drawable/bg_select_circle_white_red"
+        android:gravity="center"/>
+
+</RelativeLayout>

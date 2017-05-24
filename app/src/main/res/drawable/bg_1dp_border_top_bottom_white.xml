@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 不带圆角 白色背景 灰色边框  上下边框 长方体 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:top="@dimen/h_divider"
+        android:bottom="@dimen/h_divider">
+        <shape>
+            <solid android:color="@color/white" />
+            <stroke
+                android:width="@dimen/h_divider"
+                android:color="@color/divider_color" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lottery</string>
+
+    <string name="unit">%1$s注</string>
+    <string name="chinese_yuan">%1$s元</string>
+    <string name="confirm">确定</string>
+    <string name="machine_random">机选</string>
+    <string name="choose_big_lotto_tip">至少选择5个前区，2个后区号码</string>
+</resources>
