@@ -112,13 +112,12 @@ public class MainActivity extends BaseActivity implements SensorEventListener, B
                 mRandomView.setVisibility(View.VISIBLE);
 
                 for (int i = 0, size = mRandomList.size(); i < size; i++) {
-                    Message message = new Message();
-                    message.what = WHAT_DRAW_VIEW;
-                    message.obj = mRandomView;
-                    message.arg1 = i;
-                    sendMessageDelayed(message, (i + 1) * 40);
+                    Ball ball = mRandomList.get(i);
+                    ball.isSelect = true;
+                    mRandomView.addView(ball);
                 }
-                sendEmptyMessageDelayed(WHAT_ANIM, 500);
+                mRandomView.startAnim();
+                sendEmptyMessageDelayed(WHAT_ANIM, 1500);
             } else if (mRandomView != null && !ExtendUtils.listIsNullOrEmpty(mRandomList) && msg.what == WHAT_DRAW_VIEW && msg.arg1 >= 0 && msg.arg1 < mRandomList.size()) {
                 Ball ball = mRandomList.get(msg.arg1);
                 ball.isSelect = true;

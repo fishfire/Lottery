@@ -56,9 +56,7 @@ public class BigLotteryPresenterImpl implements BigLotteryPresenter {
         randomSourceIndex(reds, GlobalConstant.BigLottery.RED, 5);
         List<Integer> blues = new ArrayList<>();
         randomSourceIndex(blues, GlobalConstant.BigLottery.BLUE, 2);
-        if (list != null) {
-            list.clear();
-        }
+        list.clear();
         list.addAll(generaterBalls(reds, blues));
     }
 

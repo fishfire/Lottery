@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -19,7 +20,7 @@ import com.nineoldandroids.animation.AnimatorInflater;
  *
  * @author liuhui8
  */
-public class RandomView extends LinearLayout{
+public class RandomView extends LinearLayout {
     public RandomView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
@@ -38,8 +39,17 @@ public class RandomView extends LinearLayout{
         textView.setBackgroundResource(ball.type == Ball.RED ? R.drawable.bg_select_circle_white_red : R.drawable.bg_select_circle_white_blue);
         textView.setSelected(ball.isSelect);
         addView(textView);
-        Animator anim = AnimatorInflater.loadAnimator(getContext(), R.anim.anim_0_1);
-        anim.setTarget(textView);
-        anim.start();
+
+    }
+
+    public void startAnim() {
+        for (int i = 0; i < getChildCount(); i++) {
+            View view = getChildAt(i);
+            Animator anim = AnimatorInflater.loadAnimator(getContext(), R.anim.anim_0_1);
+            anim.setTarget(view);
+            anim.setDuration(400 * i);
+            anim.start();
+
+        }
     }
 }
